@@ -67,7 +67,7 @@ def topk_accuracy(dataset, model, tokenizer, batch_size=8):
 if __name__ == "__main__":
     
     # 체크포인트 로딩
-    checkpoint = "./checkpoints/checkpoint-339021"  # 학습한 체크포인트 경로    
+    checkpoint = "./checkpoints/checkpoint-381555"  # 학습한 체크포인트 경로    
     model = EncoderDecoderModel.from_pretrained(checkpoint)
     tokenizer = PreTrainedTokenizerFast.from_pretrained(checkpoint)
 

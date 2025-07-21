@@ -8,7 +8,7 @@ USPTO-50k (located in `./data/`)
 
 - Source (`src`): product
 - Target (`tgt`): reactants
-- split to `train`/`val`/`test` sets
+- split into `train`/`val`/`test` sets
 
 ## Train Model
 

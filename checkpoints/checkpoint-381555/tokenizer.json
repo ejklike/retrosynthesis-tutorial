@@ -1,0 +1,297 @@
+{
+  "version": "1.0",
+  "truncation": {
+    "direction": "Right",
+    "max_length": 128,
+    "strategy": "LongestFirst",
+    "stride": 0
+  },
+  "padding": {
+    "strategy": {
+      "Fixed": 128
+    },
+    "direction": "Right",
+    "pad_to_multiple_of": null,
+    "pad_id": 1,
+    "pad_type_id": 0,
+    "pad_token": "[PAD]"
+  },
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[BOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[EOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "[UNK]",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[PAD]": 1,
+      "[BOS]": 2,
+      "[EOS]": 3,
+      "#": 4,
+      "(": 5,
+      ")": 6,
+      "+": 7,
+      "-": 8,
+      ".": 9,
+      "/": 10,
+      "1": 11,
+      "2": 12,
+      "3": 13,
+      "4": 14,
+      "5": 15,
+      "6": 16,
+      "7": 17,
+      "8": 18,
+      "9": 19,
+      "=": 20,
+      "@": 21,
+      "B": 22,
+      "C": 23,
+      "F": 24,
+      "H": 25,
+      "I": 26,
+      "K": 27,
+      "L": 28,
+      "M": 29,
+      "N": 30,
+      "O": 31,
+      "P": 32,
+      "S": 33,
+      "Z": 34,
+      "[": 35,
+      "\\": 36,
+      "]": 37,
+      "c": 38,
+      "d": 39,
+      "e": 40,
+      "g": 41,
+      "i": 42,
+      "l": 43,
+      "n": 44,
+      "o": 45,
+      "r": 46,
+      "s": 47,
+      "t": 48,
+      "u": 49,
+      "Cl": 50,
+      "Br": 51,
+      "@@": 52,
+      "nH": 53,
+      "-]": 54,
+      "+]": 55,
+      "Si": 56,
+      "@]": 57,
+      "@@]": 58,
+      "Mg": 59,
+      "Sn": 60,
+      "SiH": 61,
+      "NH": 62,
+      "NH4": 63,
+      "Zn": 64,
+      "Cu": 65,
+      "SiH2": 66,
+      "BH": 67,
+      "NH3": 68,
+      "BH3": 69,
+      "Li": 70,
+      "se": 71,
+      "NH2": 72,
+      "OH": 73,
+      "SH": 74,
+      "PH": 75,
+      "SnH": 76,
+      "Se": 77,
+      "Pt": 78,
+      "PH2": 79,
+      "PH4": 80,
+      "@+]": 81,
+      "Fe": 82,
+      "Pd": 83
+    },
+    "merges": [
+      [
+        "C",
+        "l"
+      ],
+      [
+        "B",
+        "r"
+      ],
+      [
+        "@",
+        "@"
+      ],
+      [
+        "n",
+        "H"
+      ],
+      [
+        "-",
+        "]"
+      ],
+      [
+        "+",
+        "]"
+      ],
+      [
+        "S",
+        "i"
+      ],
+      [
+        "@",
+        "]"
+      ],
+      [
+        "@@",
+        "]"
+      ],
+      [
+        "M",
+        "g"
+      ],
+      [
+        "S",
+        "n"
+      ],
+      [
+        "Si",
+        "H"
+      ],
+      [
+        "N",
+        "H"
+      ],
+      [
+        "NH",
+        "4"
+      ],
+      [
+        "Z",
+        "n"
+      ],
+      [
+        "C",
+        "u"
+      ],
+      [
+        "SiH",
+        "2"
+      ],
+      [
+        "B",
+        "H"
+      ],
+      [
+        "NH",
+        "3"
+      ],
+      [
+        "BH",
+        "3"
+      ],
+      [
+        "L",
+        "i"
+      ],
+      [
+        "s",
+        "e"
+      ],
+      [
+        "NH",
+        "2"
+      ],
+      [
+        "O",
+        "H"
+      ],
+      [
+        "S",
+        "H"
+      ],
+      [
+        "P",
+        "H"
+      ],
+      [
+        "S",
+        "nH"
+      ],
+      [
+        "S",
+        "e"
+      ],
+      [
+        "P",
+        "t"
+      ],
+      [
+        "PH",
+        "2"
+      ],
+      [
+        "PH",
+        "4"
+      ],
+      [
+        "@",
+        "+]"
+      ],
+      [
+        "F",
+        "e"
+      ],
+      [
+        "P",
+        "d"
+      ]
+    ]
+  }
+}
